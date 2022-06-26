@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="" type=""> -->
+    <!-- import font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&display=swap"
+    rel="stylesheet">
+    <!-- import font awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- import bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- import main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- import main style responsive -->
+    <link rel="stylesheet" href="assets/css/style_responsive.css">
+   
+
+    <title>Electronic Store </title>
+</head>
+<body> 
+  
+      <div class="text-center postioin-fixed">
+        <div class="read alert alert-primary  postioin-absolute d-none" id="readA" role="alert">
+            Item Readed!
+          </div>
+          <div class="creat alert alert-success d-none" role="alert" id="creatA">
+            Item Created!
+          </div>
+          
+          <div class="update alert alert-warning d-none" role="alert" id="upA">
+            Item Updated!
+          </div>
+          <div class="delete alert alert-danger d-none" role="alert" id="deleteA">
+            Item Deleted!
+             </div>
+      </div>
+   
+     <header class="head">
+         <div class="container">
+              </div>
+             <div class="row">
+                 <div class="col-md-6">
+                    <img src="assets/img/logo.PNG" class="rounded mx-auto d-block" alt="...">
+                    
+                 </div>
+                 <h1 class="text-capitalize text-center">Electronic store</h1>
+                
+             </div>  
+     </header>
+      
+      <form class="my-form">
+       <div class="container">
+           <div class="row">
+            <fieldset disabled>
+                <div class="mb-3 my-2">
+                  <input type="text" id="dis" class="form-control" placeholder="">
+                </div>
+            </fieldset>
+           <div class=" col-md-12">
+            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+            <input type="text" class="form-control w-100 " id="name" placeholder="Product name">
+             </div>
+             <div class=" col-md-6 my-3">
+                <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                <input type="text" class="form-control " id="seller" placeholder="Seller">
+                 </div>
+                 <div class=" col-md-6 my-3">
+                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                    <input type="number" class="form-control" id="price" placeholder="Price">
+                     </div>
+                    </div>
+                    <div class="mBtn my-3 py-3 mx-3 px-3 text-center">
+                        <button type="button" class="btn btn-success mx-3" id="creat">Creat</button>
+                        <button type="button" class="btn btn-primary mx-3" id="read">Read</button>
+                        <button type="button" class="btn btn-warning mx-3" id="update">Update</button>
+                        <button type="button" class="btn btn-danger  mx-3" id="deleteAll">Delete All</button>
+                       
+                    </div>
+                    <div class=" col-md-12">
+                        <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                        <input type="text" class="form-control w-100 " id="search" placeholder="Search by name...">
+                         </div>
+                    <div class="my-table my-3">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <td>ID</td>
+                                    <td>Product Name</td>
+                                    <td>Seller</td>
+                                    <td>Price</td>
+                                    <td>Edit</td>
+                                    <td>Delete</td>
+                                    
+                                   
+                                </tr>
+                            </thead>
+                            <tbody id="table">     <!--المكان يلي بدي اعدل اعليه رحت اعطيته الاي دي -->
+                            </tbody>
+                          </table>
+                    </div>
+         <div>
+      </form>
+    <!-- import bootstrap js  -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+     <!-- import my js  -->
+     <script src="assets/js/script.js"></script>
+
+</body>
+</html>
